@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.pc_list{
+    display: none;  
+}
+
+.pc_component:hover .pc_list{
+    z-index: 3;
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    background-color: #1f2833;
+    top: 70px;
+    padding-top: 20px;
+    left: 0;
+    width: 100%;
+    height: 430px;
+}
+
+.monitor_image ,.keyboard_image ,.mouse_image ,.motherboard_image ,
+.ram_image ,.smps_image ,.processor_image ,.graphics_image ,.hardisk_image ,
+.cabinet_image ,.cooler_image{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    left: 40%;
+    top: 40%;
+    transform: scale(0);
+    transition: .6s;
+}
+.monitor_word:hover .monitor_image ,.keyboard_word:hover .keyboard_image ,
+.mouse_word:hover .mouse_image ,.motherboard_word:hover .motherboard_image ,
+.ram_word:hover .ram_image ,.smps_word:hover .smps_image ,.processor_word:hover .processor_image ,
+.graphics_word:hover .graphics_image ,.hardisk_word:hover .hardisk_image ,
+.cabinet_word:hover .cabinet_image ,.cooler_word:hover .cooler_image {
+    transform: scale(1);
+    transition-delay: .3s;
+}
+
+
+.login_button button{
+   background:none;
+   color: #45a29e;
+   padding: 4px 9px;
+   border: 1px solid #45a29e;
+   border-radius: 5px;
+}
+.login_button button:hover{
+    box-sizing: content-box;
+    color: #0b0c10;
+    padding: 4px px;
+    background-color: #66fcf1;
+    border: 1px solid #66fcf1;
+    border-radius: 5px;
+}
+
+.pc_list a{
+    color:#66fcf1 ;
+}
+
+
+.pc_list a:hover{
+    color: #66fcf1;
+}
+
+.navbar_list {
+    position:absolute;
+    z-index: 3;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 30px 30px 0 0;
+}
+.navbar_list a{
+    padding: 10px;
+    text-decoration: none;
+    color: #45a29e;
+}
+.navbar_list li{
+    padding-right: 30px;
+    list-style-type: none;
+}
+.navbar_list a:hover{
+    color: #66fcf1;
+}
+ /* navbar end */
+.login_button ,.pc_component ,.custome_pc ,.home{
+    text-shadow: none;
+}
+
+.block_section{
+    padding:  70px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.block_1 ,.block_2 ,.block_3 ,.block_4{
+    box-shadow: 10px 10px 15px rgba(128, 128, 128, 0.67);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: #ffffff;
+    height: 200px;
+    width: 180px;
+
+}
+.block_1 h3 ,.block_2 h3 ,.block_3 h3 ,.block_4 h3{
+    color:#45a29e ;
+
+}
+.block_1 p ,.block_2 p ,.block_3 p ,.block_4 p{
+    color: rgb(163, 163, 163)
+}
+.block_1:hover ,.block_2:hover ,.block_3:hover ,.block_4:hover{
+    background-color: #45a29e;
+    transition: .5s;
+    color: black;
+}
+.block_1:hover p,.block_2:hover p,.block_3:hover p,.block_4:hover p{
+    color: rgb(18, 18, 18);
+    transition: .5s;
+}
+
+.block_1:hover h3,.block_2:hover h3,.block_3:hover h3,.block_4:hover h3{
+    color: white;
+    transition: .5s;
+}
+
+.login_image img{
+    height: 600px;
+    width: 450px;
+}
+.login_content{
+    background-color: #c5c6c7;
+    width: 40%;
+}
+.login_content button{
+    border: none;
+    color: #1f2833;
+    border: 1px solid #1f2833;
+    border-radius: 4px;
+    padding: 5px 20px ;
+}
+.login_content button:hover{
+    background-color: #1f2833;
+    color: #66fcf1;
+    border: 1px solid #1f2833;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: #1f2833;
+    color: #c5c6c7;
+    width: 100%;
+}
+.footer_para {
+    line-height: 30px;
+    width: 30%;
+}
+.footer_content{
+    width: 40%;
+}
+.footer_address{
+    width: 30%;
+}
+.footer_content li{
+    width: 100%;
+}
+
+
+/* monitor */
+
+.pc_component_store{
+    display: none;
+}
+.navbar_monitor a,.navbar_keyboard a{
+    color: #45a29e;
+    text-decoration: none;
+}
+.navbar_monitor ,.navbar_keyboard{
+    position: relative;
+    cursor: pointer;
+    background-color: #1f2833;
+    color: #45a29e;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+.navbar_monitor a:hover{
+    color: #66fcf1;
+}
+.pc_component_list:hover .pc_component_store{
+    margin-top: -25px;
+    padding-top: 20px;
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 29%;
+    background-color: #1f2833;
+}
+.navbar_monitor:hover .pc_component_store a,li{
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+.monitor_panel ,.keyboard_panel{
+    background-color: #ffffff;
+    color: #1f2833;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.monitor_panel_section ,.keyboard_panel_section{
+    box-shadow: 6px 6px 6px  rgb(176, 176, 176);
+}
+
+/* .monitor_section , keyboard_section*/
+
+.monitor_display_section ,.keyboard_display_section ,.mouse_display_section ,.motherboard_display_section ,.hardisk_display_section,
+.ram_display_section ,.smps_display_section ,.processor_display_section ,.graphics_display_section ,.cabinet_display_section
+,.cooler_display_section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #45a29e;
+}
+
+.monitor_card ,.keyboard_card ,.mouse_card ,.motherboard_card ,.ram_card ,.hardisk_card
+,.smps_card ,.processor_card ,.graphics_card ,.cabinet_card ,.cooler_card{
+    position: relative;
+    width: 250px;
+    perspective: 1000px;
+}
+
+.monitor_detail h3 ,.keyboard_detail h3 ,.mouse_detail h3 ,.motherboard_detail h3 ,.hardisk_detail h3
+,.smps_detail h3 ,.processor_detail h3 ,.graphics_detail h3 ,.cabinet_detail h3 .cooler_detail h3{
+    margin-top: -40px;
+}
+
+.monitor_detail p ,.keyboard_detail p ,.mouse_detail p ,.motherboard_detail p ,.ram_detail p ,.hardisk_detail p
+,.smps_detail p ,.processor_detail p ,.graphics_detail p ,.cabinet_detail p ,.cooler_detail p{
+    width: 90%;
+}
+
+.monitor_card_1 ,.keyboard_card_1 ,.mouse_card_1 ,.motherboard_card_1 ,.ram_card_1 ,.hardisk_card_1
+ ,.smps_card_1  ,.processor_card_1 ,.graphics_card_1 ,.cabinet_card_1 ,.cooler_card_1{
+    opacity: 1;
+    border-radius: 8px;
+    background-color: #ffffffbc;
+    transition: transform 0.6s;
+}
+
+.monitor_card:hover .monitor_card_1 img ,.keyboard_card:hover .keyboard_card_1 , .mouse_card:hover .mouse_card_1 ,.hardisk_card:hover .hardisk_card_1,
+.motherboard_card:hover .motherboard_card_1 ,.graphics_card:hover .graphics_card_1 ,.cabinet_card:hover .cabinet_card_1,
+.ram_card:hover .ram_card_1 ,.smps_card:hover .smps_card_1 ,.processor_card:hover .processor_card_1 ,.cooler_card:hover .cooler_card_1 {
+    transition: .6s;
+    opacity: 0;
+}
+
+.monitor_card:hover .final_content ,.keyboard_card:hover .final_content , .mouse_card:hover .final_content ,.hardisk_card:hover .final_content,
+.motherboard_card:hover .final_content ,.graphics_card:hover .final_content,.cabinet_card:hover .final_content,
+.ram_card:hover .final_content ,.smps_card:hover .final_content ,.processor_card:hover .final_content ,.cooler_card:hover .final_content{
+    color: #151515;
+}
+
+.monitor_card:hover .monitor_detail ,.keyboard_card:hover .keyboard_detail , .mouse_detail:hover .mouse_detail ,.hardisk_detail:hover .hardisk_detail
+,.motherboard_card:hover .motherboard_detail ,.graphics_card:hover .graphics_detail, .cabinet_card:hover .cabinet_detail,
+.ram_card:hover .ram_detail ,.smps_card:hover .smps_detail ,.processor_card:hover .processor_detail ,.cooler_card:hover .cooler_detail {
+    transition: .6s;
+    opacity: 0;
+}
+
+.monitor_card:hover .monitor_card_1 , .keyboard_card:hover .keyboard_card_1 , .mouse_card:hover .mouse_card_1 , .hardisk_card:hover .hardisk_card_1,
+.motherboard_card:hover .motherboard_card_1 ,.graphics_card:hover .graphics_card_1,.cabinet_card:hover .cabinet_card_1,
+.ram_card:hover .ram_card_1 ,.smps_card:hover .smps_card_1 ,.processor_card:hover .processor_card_1 ,.cooler_card:hover .cooler_card_1 {
+    background-color: #66fcf1;
+    box-shadow: 0 20px 20px rgb(96, 96, 96);
+    transform: rotateX(30deg);
+}
+
+
+
+.monitor_card:hover .final_content ,.keyboard_card:hover .final_content , .mouse_card:hover .final_content ,
+.graphics_card:hover .final_content,.cabinet_card:hover .final_content,.cooler_card:hover .final_content,
+.motherboard_card:hover .final_content ,.ram_card:hover .final_content ,.smps_card:hover .final_content ,
+.processor_card:hover .final_content ,.hardisk_card:hover .final_content {
+    cursor: pointer;
+    transform: translateY(-60px);
+    opacity: 1;
+    transition: 1s;
+    text-align: center;
+    display: block;    
+    position: absolute;
+    top: 10px;
+}
+
+.final_content{
+    text-align: center;
+    width: 250px;
+    opacity:0;
+    position: absolute;
+    top: -20px;
+}
+
+.final_image{
+    pointer-events: none;
+    transition: 1s;
+    height: 300px;
+    margin-left: -22px;
+}
+
+.final_cart{
+    background-color: white;
+}
+.final_strike_rate{
+    margin-bottom: -60px;
+}
+.final_brand_name{
+    font-size: 30px;
+    margin: -70px 0 40px;
+}
+.fixed_cart img{
+    box-sizing: content-box;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px grey;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 4;
+    right:  30px;
+    bottom: 50px;
+}
+
+.final_icon{
+    margin-top: 25px;
+}
+.plus_icon{
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+}
+
+.dark_cart{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:18px;
+    right: 22px;
+}
+.dark_cart span{
+    top: -12px;
+    right: 0.8px;
+    position: absolute;
+    background-color: #66fcf1;
+    width: 18px;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+.pc_section{
+    margin-top: 50px;
+    height: 920px;
+    width: 100%;
+    /* overflow-x: scroll; */
+    display: flex;
+}
+.filter_section{
+    position: sticky;
+    top: 0;
+}
+
+
+
+.device_section{
+    /* padding-left: 20px; */
+    overflow: scroll;
+    flex-direction: column;
+    display: flex;
+}
+
+.price_range_input{
+    appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #c4c5c6;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.price_range_input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 10px;
+    border-radius:15px;
+    background: #1f2833;
+    cursor: pointer;
+  }
+  .hide_menu{
+    display:none;
+}
+.bill_section{
+    text-align: center !important;
+}
+.bill{
+    margin: 20px;
+}
+
+
+  @media screen and (max-width:900px){
+    .hide_menu{
+        display:block !important;
+    }
+    .navbar_list{
+        display: none;
+    }
+    .block_section{
+        gap: 10px;
+    }
+    .login_image{
+        display: none;
+    }
+    .login_content{
+        align-items: center;
+        width: 80%;
+    }
+    .footer_content{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .information_content{
+        width: 100%;
+    }
+    .footer_para {
+        width: 100%;
+    }
+    .footer_address{
+        width: 90%;
+    }
+}
+

@@ -1,0 +1,691 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERBOARD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Assets/icon/bx-power-off.svg">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+      body{
+        background-color: #c5c6c7;
+      }
+    </style>
+
+
+
+    <section class="monitor_panel_section">
+      <img class="menu"  style=" position: absolute; top: 25px; left: 10px; height: 30px; cursor: pointer; border: 1px solid grey; border-radius: 2px; " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGZJREFUSEvtlrENACAMw8pnnMZpfAYTC1W3CDOEA2JhUpUW0GkQNwx+Zt6qj+ohdp7yKtVLDE6c78DiC+c4t/o46WLX8877rlzYOGGqxU/scYryB4KVCwNja9GtlhvwWpQrrQIx1Rt3TwofeC3yFwAAAABJRU5ErkJggg=="/>
+        <h1 class="monitor_panel">PC STORE</h1>
+    </section>
+
+    <section class="pc_section ">
+
+      <a href="total.html" target="_blank" class="dark_cart">
+        <img src="./Assets/icon/cart dark.svg">
+        <span class="cart_number">0</span>  
+      </a>
+        
+      <div class="filter_section ">
+
+        <div class="accordion" id="accordionExample">
+          
+          <div class="accordion-item ">
+            <h2 class="accordion-header">
+                <button class="accordion-button monitor_button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  MONITOR
+                 </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body ">
+                <h3 class="name"><a href="monitor.html">MONITOR</a></h3>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">AOC</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">MSI</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">SAMSUNG</label> 
+                </div>
+                <input  class="price_range_input" type="range" min="20000" max="120000"> 
+                <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               KEYBOARD
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4 class="device_name"><a href="keyboard.html">KEYBOARD</a></h4>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">ANT ESPORTS</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">EVM</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">GAMDIAS</label> 
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">LOGITECH</label> 
+                </div>
+                  <input class="price_range_input" type="range" min="20000" max="120000"> 
+                  <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                MOUSE
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4 class="device_name"><a href="mouse.html">MOUSE</a></h4>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">AOC</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">MSI</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">SAMSUNG</label> 
+                </div>
+                  <input class="price_range_input" type="range" min="20000" max="120000"> 
+                  <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                MOTHERBOARD
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4 class="device_name"><a href="motherboard.html">MOTHER BOARD</a></h4>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">AOC</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">MSI</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">SAMSUNG</label> 
+                </div>
+                  <input class="price_range_input" type="range" min="20000" max="120000"> 
+                  <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                RAM
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4 class="device_name"><a href="ram.html">RAM</a></h4>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">AOC</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">MSI</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">SAMSUNG</label> 
+                </div>
+                  <input class="price_range_input" type="range" min="20000" max="120000"> 
+                  <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                SMPS
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4 class="device_name"><a href="smps.html">SMPS</a></h4>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">AOC</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">MSI</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">SAMSUNG</label> 
+                </div>
+                  <input class="price_range_input" type="range" min="20000" max="120000"> 
+                  <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                PROCESSOR
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4 class="device_name"><a href="processor.html">PROCESSOR</a></h4>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">AOC</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">MSI</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">SAMSUNG</label> 
+                </div>
+                  <input class="price_range_input" type="range" min="20000" max="120000"> 
+                  <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                GRAPHIC CARD
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4 class="device_name"><a href="grphics.html">GRAPHICS CARD</a></h4>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">AOC</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">MSI</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">SAMSUNG</label> 
+                </div>
+                  <input class="price_range_input" type="range" min="20000" max="120000"> 
+                  <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                CABINET
+              </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4 class="device_name"><a href="cabinet.html">CABINET</a></h4>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">AOC</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">MSI</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">SAMSUNG</label> 
+                </div>
+                  <input class="price_range_input" type="range" min="20000" max="120000"> 
+                  <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+                COOLER
+              </button>
+            </h2>
+            <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4 class="device_name"><a href="cooler.html">COOLER</a></h4>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">AOC</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">MSI</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">SAMSUNG</label> 
+                </div>
+                  <input class="price_range_input" type="range" min="20000" max="120000"> 
+                  <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseThree">
+                HARDISK
+              </button>
+            </h2>
+            <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4 class="device_name"><a href="hardisk.html">HARDISK</a></h4>
+                <h4>BRAND</h4>
+                <div>
+                  <input id="AOC" type="checkbox">
+                  <label for="AOC">AOC</label>
+                </div>
+                <div>
+                  <input id="MSI" type="checkbox">
+                  <label for="MSI">MSI</label>
+                </div>
+                <div>
+                  <input id="SAMSUNG" type="checkbox">
+                  <label for="SAMSUNG">SAMSUNG</label> 
+                </div>
+                  <input class="price_range_input" type="range" min="20000" max="120000"> 
+                  <p>price : <span id="price_range">0</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="device_section">
+        
+      <div class="motherboard_section"> 
+          
+        <div class="motherboard_display_section">
+                          <!-- 1th card -->
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/ASRock Phantom Gaming X870E Nova WiFi AM5 ATX Motherboard (X870E-NOVA-WIFI).jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/ASRock_Phantom_Gaming_X870E_Nova_WiFi_AM5_ATX_Motherboard__X870E-NOVA-WIFI_-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+                        <!-- 2nd card -->
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/ASRock Phantom Gaming X870E Nova WiFi AM5 ATX Motherboard (X870E-NOVA-WIFI).jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/ASRock_Phantom_Gaming_X870E_Nova_WiFi_AM5_ATX_Motherboard__X870E-NOVA-WIFI_-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+                    <!-- 3rd card -->
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/ASRock Phantom Gaming X870E Nova WiFi AM5 ATX Motherboard (X870E-NOVA-WIFI).jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/ASRock_Phantom_Gaming_X870E_Nova_WiFi_AM5_ATX_Motherboard__X870E-NOVA-WIFI_-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+                      <!-- 4th card -->
+
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/ASRock Phantom Gaming X870E Nova WiFi AM5 ATX Motherboard (X870E-NOVA-WIFI).jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/ASRock_Phantom_Gaming_X870E_Nova_WiFi_AM5_ATX_Motherboard__X870E-NOVA-WIFI_-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+                      <!-- 5th card -->
+
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/ASRock Z890 Steel Legend WiFi LGA1851 ATX Motherboard (Z890-STEEL-LEGEND-WIFI).jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/ASRock_Z890_Steel_Legend_WiFi_LGA1851_ATX_Motherboard__Z890-STEEL-LEGEND-WIFI_-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+                <!-- 6th card -->
+
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/ASRock Z890 Steel Legend WiFi LGA1851 ATX Motherboard (Z890-STEEL-LEGEND-WIFI).jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/ASRock_Z890_Steel_Legend_WiFi_LGA1851_ATX_Motherboard__Z890-STEEL-LEGEND-WIFI_-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+            <!-- 7th card -->
+
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/ASRock Z890 Steel Legend WiFi LGA1851 ATX Motherboard (Z890-STEEL-LEGEND-WIFI).jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/ASRock_Z890_Steel_Legend_WiFi_LGA1851_ATX_Motherboard__Z890-STEEL-LEGEND-WIFI_-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+                      <!-- 8th card -->
+
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/ASRock Z890 Steel Legend WiFi LGA1851 ATX Motherboard (Z890-STEEL-LEGEND-WIFI).jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/ASRock_Z890_Steel_Legend_WiFi_LGA1851_ATX_Motherboard__Z890-STEEL-LEGEND-WIFI_-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+          <!-- 9th card -->
+
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/Asus Rog Strix Z890-E Gaming WiFi LGA1851 ATX Motherboard.jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/Asus_Rog_Strix_Z890-E_Gaming_WiFi_LGA1851_ATX_Motherboard-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+          <!-- 10th card -->
+
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/Asus Rog Strix Z890-E Gaming WiFi LGA1851 ATX Motherboard.jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/Asus_Rog_Strix_Z890-E_Gaming_WiFi_LGA1851_ATX_Motherboard-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+          <!-- 11th card -->
+
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/Asus Rog Strix Z890-E Gaming WiFi LGA1851 ATX Motherboard.jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/Asus_Rog_Strix_Z890-E_Gaming_WiFi_LGA1851_ATX_Motherboard-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+          <!-- 12th card -->
+
+          <div class="motherboard_card">
+            <div class="motherboard_card_1">
+              <div class="text-center pb-2 pe-3">
+                <img  src="./Assets/motherboard jpg/Asus Rog Strix Z890-E Gaming WiFi LGA1851 ATX Motherboard.jpg" style="height: 230px; width: 250px;" >
+                </div>
+              <div class="motherboard_detail ps-3">
+                  <h3>AOC</h3>
+                  <p>AOC CU34G2XP 34 Inch WQHD Curved Gaming Monitor (CU34G2XP)</p>
+                  <p class="mb-0"><strike>&#8377; 77,999</strike></p>
+                  <h2>&#8377; 69,990</h2>
+              </div>
+            </div>
+            <div class="final_content">
+              <img class="final_image" src="./Assets/motherboard png/Asus_Rog_Strix_Z890-E_Gaming_WiFi_LGA1851_ATX_Motherboard-removebg-preview.png">
+              <h2 class="final_brand_name">AOC</h2>
+              <p class="final_strike_rate"><strike>&#8377; 77,999</strike></p>
+              <h2 class="final_price">&#8377; 69,990</h2>
+                <div class="final_icon">
+                 <button class="plus_icon">+</button>
+                </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+      </div>
+
+</section>
+
+
+<footer class="footer_content container-fluid py-4 ">
+
+  <div class="row">
+  
+   <div class="footer_para col-12 col-sm-4 text-start d-flex align-items-center">
+       <p>We have Great amount of experience in Building Gaming PC, Editing PC & Workstation PC for our clients. We build with love and we know what your PC means to you</p>
+   </div>
+
+   <div class="information_content col-12 col-sm-4 text-start">
+       <h1>INFORMATION</h1>
+       <li>ContactUs</li>
+       <li>AboutUs</li>
+       <li>Terms & conditions</li>
+       <li>privacy policy</li>
+       <li>Shipping Policy</li>
+       <li>Refund & Cancellation policy</li>
+   </div>
+
+   <div class="footer_address col-12 col-sm-4 text-start">
+       <h1>Contact us</h1>
+       <p>3rd Floor, Gedore House, 305, 51-52, Nehru Place, New Delhi, Delhi 110019</p>
+       <p>Phone: +91 8524087257 10am-6pm(mon-Sat)</p>
+       <p>Mail:  support@pcfactory.com</p>
+   </div>
+  </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="./main.js"></script>
+</body>
+</html>
